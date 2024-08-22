@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
+import { FlexLayoutServerModule } from '@angular/flex-layout/server';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), 
@@ -23,5 +24,6 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     BrowserAnimationsModule,
     BrowserModule,provideAnimationsAsync(),
-    NgModule, provideAnimationsAsync()]
+    NgModule, provideAnimationsAsync(), 
+  FlexLayoutServerModule]
 };
