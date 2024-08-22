@@ -6,6 +6,18 @@ import { DashboardComponent } from '../dashboard/dashboard/dashboard.component';
 
 export const routes: Routes = [
     {path: 'home', component: LandingPageComponent},
-    {path:'dashboard', component: DashboardComponent}
+    {path:'dashboard', component: DashboardComponent},
+
+
+
+    //Default route - always at end
+  { path: '**', redirectTo: 'home' },
+
+  //Root
+  {
+    path: '**',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
 
 ];

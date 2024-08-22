@@ -23,5 +23,5 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     BrowserAnimationsModule,
     BrowserModule,provideAnimationsAsync(),
-    NgModule]
+    NgModule, provideAnimationsAsync()]
 };

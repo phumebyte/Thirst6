@@ -1,0 +1,21 @@
+/* landing-page.component.scss */
+.container {
+    background-color: #f7fafc; /* Tailwind's 'gray-100' */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #2d3748; /* Tailwind's 'gray-800' */
+  }
+  
+  a {
+    background-color: #1a202c; /* Tailwind's 'primary' color */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+  
+    &:hover {
+      background-color: #4a5568; /* Tailwind's 'gray-700' */
+    }
+  }
+  
