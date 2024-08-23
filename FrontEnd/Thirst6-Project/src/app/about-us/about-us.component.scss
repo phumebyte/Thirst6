@@ -1,0 +1,51 @@
+$primary-color: #22577A;
+$text-color: #ffffff;
+$background-color: #f4f4f4;
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $background-color;
+  
+  .about-us-header {
+    background-color: $primary-color;
+    color: $text-color;
+    text-align: center;
+    padding: 2rem;
+    
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+  }
+  
+  .about-us-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    h2 {
+      color: $primary-color;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    p {
+      line-height: 1.6;
+    }
+  }
+  
+  .about-us-footer {
+    background-color: $primary-color;
+    color: $text-color;
+    text-align: center;
+    padding: 1rem;
+    
+    p {
+      margin: 0;
+      font-size: 0.875rem;
+    }
+  }
+}
